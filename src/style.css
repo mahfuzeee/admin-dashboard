@@ -1,21 +1,29 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
  * {
    font-size: 1.2rem;
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
  }
 
 :root {
    --bg-color: #eef2f7;
    --face-color: #ffb400;
    --side-color: #1e88c7;
+   --para-color: #555555;
 }
 
 body {
+   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    margin: 0;
    padding: 0;
    background-color: var(--bg-color);
 }
-
+p {
+   color: var(--para-color);
+}
  .top-container {
    overflow: auto;
    display: grid;
@@ -31,6 +39,8 @@ body {
    margin-left: 0.5rem;
    
    grid-column: 2/4;
+   box-shadow: 0 2px 2px -2px rgb(0, 0, 0, 0.6);
+   
 }
 
 /* Top Searchbar and profile notification */
@@ -200,6 +210,7 @@ li {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    gap: 15px;
+   margin-top: 0.5rem;
 }
 
 .card {
@@ -242,6 +253,7 @@ li {
    flex-direction: column;
    /* gap: 0.5rem; */
    padding: 1rem 1rem;
+   margin-top: 0.5rem;
 }
 
 .announce p {
